@@ -2,418 +2,782 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <meta
+      name="description"
+      content="Sanjana Singamsetty — Software Engineer at PayPal, AI Researcher, and Full-Stack Developer with 4 peer-reviewed publications."
+    />
+    <title>Sanjana Singamsetty | Software Engineer & AI Researcher</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
 
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">Sanjana Singamsetty</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+    <div class="bg-3d" aria-hidden="true">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+      <div class="shape shape-5"></div>
+    </div>
+
+    <nav id="navbar">
+      <a href="#hero" class="logo">SS<span class="logo-dot">.</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Sanjana Singamsetty</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+
+    <main>
+      <!-- Hero -->
+      <section id="hero" class="section reveal">
+        <div class="hero-content">
+          <p class="eyebrow">Hello, I'm</p>
+          <h1 class="hero-title">Sanjana Singamsetty</h1>
+          <p class="hero-subtitle">
+            Software Engineer <span class="accent">@ PayPal</span> · AI
+            Researcher · Full-Stack Developer
+          </p>
+          <p class="hero-description">
+            Building scalable web applications and AI-powered products. Published
+            researcher with 4 peer-reviewed IEEE &amp; PeerJ papers. Gold
+            Medalist in AI &amp; ML.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Get in Touch</a>
+            <a
+            href="/assets/Sanjana_S_Resume_Updated (4).pdf"
+              class="btn btn-secondary"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fa-solid fa-download"></i> Download CV
+            </a>
+          </div>
+          <div class="social-links">
+            <a
+              href="https://github.com/sanjana-singamsetty"
+              target="_blank"
+              rel="noopener"
+              aria-label="GitHub"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/sanjana-singamsetty-117940218/"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a
+              href="mailto:singamsettysanjana04@gmail.com"
+              aria-label="Email"
+            >
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
         </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img
-          src="./assets/profile-pic.jpeg"
-          class="round"
-          alt="Sanjana Singamsetty profile picture"
-        />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Sanjana Singamsetty</h1>
-        <p class="section__text__p2">
-          Full-Stack Developer & AI Data Enthusiast
-        </p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/Sanjana_Resume-1.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/sanjana-singamsetty-117940218/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/sanjana-singamsetty'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/pic-25.jpeg"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
+        <div class="hero-image scene-3d" id="hero-scene">
+          <div class="card-3d hero-photo-card" id="hero-tilt">
+            <div class="photo-frame">
               <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
+                src="./assets/image.png"
+                alt="Sanjana Singamsetty at PayPal"
               />
-              <h3>Experience</h3>
+              <div class="photo-shine"></div>
+            </div>
+            <div class="photo-shadow"></div>
+          </div>
+          <div class="floating-badge badge-1">
+            <i class="fa-brands fa-paypal"></i> Software Engineer
+          </div>
+          <div class="floating-badge badge-2">
+            <i class="fa-solid fa-brain"></i> AI Researcher
+          </div>
+          <div class="floating-badge badge-3">
+            <i class="fa-solid fa-medal"></i> Gold Medalist
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section reveal">
+        <div class="section-header">
+          <p class="eyebrow">Get to know more</p>
+          <h2 class="section-title">About Me</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-image scene-3d">
+            <div class="card-3d about-photo-card">
+              <div class="photo-frame">
+                <img
+                  src="./assets/paypal-office-2.jpg"
+                  alt="Sanjana at PayPal office"
+                  class="photo-landscape"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="about-content">
+            <p>
+              Software Engineer at PayPal with 1+ year of experience building
+              scalable web applications using React, TypeScript, JavaScript, and
+              modern frontend technologies. Published AI researcher with four
+              peer-reviewed IEEE and PeerJ publications spanning Machine
+              Learning, NLP, Explainable AI, Healthcare AI, and Time Series
+              Forecasting.
+            </p>
+            <p>
+              College Third Rank Holder and Gold Medalist in Artificial
+              Intelligence &amp; Machine Learning. Passionate about building
+              AI-powered products, scalable software systems, and intelligent
+              full-stack applications.
+            </p>
+            <div class="stats-grid">
+              <div class="stat-card">
+                <span class="stat-number">1+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">4</span>
+                <span class="stat-label">Publications</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">9.48</span>
+                <span class="stat-label">CGPA / 10</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">3rd</span>
+                <span class="stat-label">College Rank</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Photo Gallery -->
+      <section id="gallery" class="section reveal">
+        <div class="section-header">
+          <p class="eyebrow">Moments</p>
+          <h2 class="section-title">Highlights</h2>
+        </div>
+        <div class="gallery-3d scene-3d">
+          <div class="gallery-stack">
+            <div class="gallery-card" style="--i: 0">
+              <img src="./assets/image.png" alt="At PayPal office" />
+              <span class="gallery-label">PayPal</span>
+            </div>
+            <div class="gallery-card" >
+              <img
+                src="./assets/paypal-office-2.jpg"
+                alt="PayPal workplace"
+                class="photo-landscape"
+              />
+              <span class="gallery-label">Workplace</span>
+            </div>
+            <div class="gallery-card" style="--i: 2">
+              <img
+                src="./assets/graduation-achievement.jpg"
+                alt="Graduation achievements and medals"
+              />
+              <span class="gallery-label">Graduation</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Achievements -->
+      <section id="achievements" class="section reveal">
+        <div class="section-header">
+          <p class="eyebrow">Recognition</p>
+          <h2 class="section-title">Achievements</h2>
+        </div>
+        <div class="achievements-layout">
+          <div class="achievement-showcase scene-3d">
+            <div class="card-3d showcase-photo">
+              <div class="photo-frame gold-frame">
+                <img
+                  src="./assets/graduation-achievement.jpg"
+                  alt="SRM AP University 3rd Rank certificate and medal"
+                />
+              </div>
+              <div class="showcase-caption">
+                <i class="fa-solid fa-graduation-cap"></i>
+                SRM AP · 3rd Rank · Class of 2025
+              </div>
+            </div>
+          </div>
+          <div class="achievements-grid">
+            <div class="achievement-card">
+              <div class="achievement-icon"><i class="fa-solid fa-medal"></i></div>
+              <h3>Gold Medalist</h3>
+              <p>Artificial Intelligence &amp; Machine Learning</p>
+            </div>
+            <div class="achievement-card">
+              <div class="achievement-icon"><i class="fa-solid fa-trophy"></i></div>
+              <h3>College Third Rank</h3>
+              <p>CGPA: 9.48/10 at SRM AP University</p>
+            </div>
+            <div class="achievement-card">
+              <div class="achievement-icon"><i class="fa-solid fa-award"></i></div>
+              <h3>Gold Medal — Research Day</h3>
+              <p>Chronic Renal Disease Forecasting with Explainable AI</p>
+            </div>
+            <div class="achievement-card">
+              <div class="achievement-icon"><i class="fa-solid fa-star"></i></div>
+              <h3>First Prize — Research Symposium</h3>
+              <p>Mahindra University — Patented innovation for originality &amp; impact</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section id="experience" class="section reveal">
+        <div class="section-header">
+          <p class="eyebrow">Career journey</p>
+          <h2 class="section-title">Work Experience</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3>
+                  <img
+                    src="./assets/paypal-office.jpg"
+                    alt=""
+                    class="timeline-thumb"
+                  />
+                  Software Engineer — PayPal
+                </h3>
+                <span class="timeline-date">Jul 2025 — Present</span>
+              </div>
+              <ul>
+                <li>
+                  Delivered scalable frontend applications using React,
+                  TypeScript, JavaScript, HTML, and CSS on high-priority
+                  projects under tight timelines.
+                </li>
+                <li>
+                  Served as on-call engineer — debugging production issues,
+                  root-cause analysis, and supporting reliable customer-facing
+                  systems.
+                </li>
+                <li>
+                  Contributed to Agentic AI initiatives with MCP-based
+                  workflows and automation to improve developer productivity.
+                </li>
+                <li>
+                  Built reusable UI components following WCAG accessibility,
+                  responsive design, and maintainable frontend architecture.
+                </li>
+                <li>
+                  Collaborated cross-functionally to integrate REST APIs,
+                  automate workflows, and deploy via Git, Agile, and CI/CD.
+                </li>
+              </ul>
+              <div class="tag-list">
+                <span class="tag">React</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">MCP</span>
+                <span class="tag">CI/CD</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3>Freelance Frontend Developer — Doon International School</h3>
+                <span class="timeline-date">2025 — Present</span>
+              </div>
+              <ul>
+                <li>
+                  Designed and developed the official school website with
+                  emphasis on responsiveness, accessibility, and UX.
+                </li>
+                <li>
+                  Built reusable components and optimized performance across
+                  desktop and mobile platforms.
+                </li>
+                <li>
+                  Managed deployment, maintenance, and post-launch feature
+                  enhancements with direct stakeholder collaboration.
+                </li>
+              </ul>
+              <div class="tag-list">
+                <span class="tag">React</span>
+                <span class="tag">Responsive Design</span>
+                <span class="tag">Accessibility</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="">
+              <div class="timeline-header">
+                <h3>AWS Intern — APSSDC</h3>
+                <span class="timeline-date">May 2023 — Aug 2023</span>
+              </div>
+              <ul>
+                <li>
+                  Deployed applications using AWS cloud services and gained
+                  practical experience with cloud infrastructure workflows.
+                </li>
+              </ul>
+              <div class="tag-list">
+                <span class="tag">AWS</span>
+                <span class="tag">Cloud</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3>Flutter Developer Intern — Bragtech</h3>
+                <span class="timeline-date">May 2023 — Aug 2023</span>
+              </div>
+              <ul>
+                <li>
+                  Developed cross-platform mobile applications using Flutter and
+                  Firebase with responsive user interfaces.
+                </li>
+              </ul>
+              <div class="tag-list">
+                <span class="tag">Flutter</span>
+                <span class="tag">Firebase</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3>Android Developer Intern — Aerial Topographic Services</h3>
+                <span class="timeline-date">Mar 2023 — Apr 2023</span>
+              </div>
+              <ul>
+                <li>
+                  Built Android applications with Firebase integration,
+                  secure authentication, and CRUD functionality.
+                </li>
+              </ul>
+              <div class="tag-list">
+                <span class="tag">Android</span>
+                <span class="tag">Firebase</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Publications -->
+      <section id="publications" class="section reveal">
+        <div class="section-header">
+          <p class="eyebrow">Research</p>
+          <h2 class="section-title">Publications <span class="count">(4 Peer-Reviewed)</span></h2>
+        </div>
+        <div class="publications-grid">
+          <a
+            href="https://ieeexplore.ieee.org/document/11166969/"
+            class="publication-card"
+            target="_blank"
+            rel="noopener"
+          >
+            <span class="pub-year">2025</span>
+            <h3>
+              Comparative Analysis of Time Series Forecasting Models: Evaluating
+              Hybrid Approaches and FB Prophet
+            </h3>
+            <p class="pub-authors">
+              S. Singamsetty, M. Chimata, J. L. Manohar, M. S. Nandan, M. K.
+              Enduri
+            </p>
+            <span class="pub-venue">CONIT, IEEE</span>
+            <i class="fa-solid fa-arrow-up-right-from-square pub-link-icon"></i>
+          </a>
+
+          <a
+            href="https://doi.org/10.7717/peerj-cs.2291"
+            class="publication-card"
+            target="_blank"
+            rel="noopener"
+          >
+            <span class="pub-year">2024</span>
+            <h3>
+              Enhancing Machine Learning-based Forecasting of Chronic Renal
+              Disease with Explainable AI
+            </h3>
+            <p class="pub-authors">
+              S. Singamsetty, S. Ghanta, S. Biswas, A. Pradhan
+            </p>
+            <span class="pub-venue">PeerJ Computer Science, 10:e2291</span>
+            <i class="fa-solid fa-arrow-up-right-from-square pub-link-icon"></i>
+          </a>
+
+          <a
+            href="https://ieeexplore.ieee.org/document/10973699/"
+            class="publication-card"
+            target="_blank"
+            rel="noopener"
+          >
+            <span class="pub-year">2024</span>
+            <h3>
+              Employing TF-IDF and Word2Vec Embeddings to Identify Multi-Class
+              Toxicity Through ML &amp; DL Approaches
+            </h3>
+            <p class="pub-authors">
+              S. Singamsetty, H. Somayajula, A. L. Immadisetty, K. S.
+              Konkimalla, S. Tokala, M. K. Enduri
+            </p>
+            <span class="pub-venue">OCIT, IEEE</span>
+            <i class="fa-solid fa-arrow-up-right-from-square pub-link-icon"></i>
+          </a>
+
+          <a
+            href="https://ieeexplore.ieee.org/document/10941718/"
+            class="publication-card"
+            target="_blank"
+            rel="noopener"
+          >
+            <span class="pub-year">2024</span>
+            <h3>
+              Predicting Machine Learning for Early Diabetes Mellitus Prediction
+            </h3>
+            <p class="pub-authors">
+              S. Singamsetty, M. S. Nandan, S. S. C. Polu, J. L. Manohar, S.
+              Tokala, M. K. Enduri
+            </p>
+            <span class="pub-venue">BTS-I2C, IEEE</span>
+            <i class="fa-solid fa-arrow-up-right-from-square pub-link-icon"></i>
+          </a>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section reveal">
+        <div class="section-header">
+          <p class="eyebrow">Selected work</p>
+          <h2 class="section-title">Projects</h2>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-image">
+              <img src="./assets/project-1.png" alt="React Learning App" />
+            </div>
+            <div class="project-body">
+              <h3>React Learning — Full-Stack ML Web App</h3>
               <p>
-                1+ years <br />
-                Full-Stack Development and AI-Driven Data Solutions
+                Full-stack ML-enabled web application using React, Node.js, and
+                Express with secure user data handling, REST APIs, and an
+                interactive UI.
+              </p>
+              <div class="tag-list">
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Express</span>
+                <span class="tag">REST APIs</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/sanjana-singamsetty/My-React-Learning"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <a
+                  href="https://my-react-learning-lyart.vercel.app/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <img
+                src="./assets/project-2.png"
+                alt="Chronic Kidney Disease Prediction"
+              />
+            </div>
+            <div class="project-body">
+              <h3>Early CKD Prediction with Explainable AI</h3>
+              <p>
+                Healthcare AI tool using clinical datasets, ML models, and
+                explainability techniques — deployed on Hugging Face Spaces for
+                real-time predictions.
+              </p>
+              <div class="tag-list">
+                <span class="tag">Machine Learning</span>
+                <span class="tag">Explainable AI</span>
+                <span class="tag">Hugging Face</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/sanjana-singamsetty/kindey_disease_prediction/tree/main"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <a
+                  href="https://huggingface.co/spaces/sanjana04/Chronic_Kidney_Aibased_Suggestion"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <img
+                src="./assets/project-3.png"
+                alt="Personality Explorer NLP"
+              />
+            </div>
+            <div class="project-body">
+              <h3>Personality Explorer — NLP &amp; Transformers</h3>
+              <p>
+                NLP personality prediction tool using transformer-based models,
+                Hugging Face Transformers, and Streamlit for real-time text
+                analysis.
+              </p>
+              <div class="tag-list">
+                <span class="tag">NLP</span>
+                <span class="tag">Transformers</span>
+                <span class="tag">Streamlit</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://huggingface.co/spaces/sanjana04/Personality-Explorer"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section reveal">
+        <div class="section-header">
+          <p class="eyebrow">Technical expertise</p>
+          <h2 class="section-title">Skills</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3><i class="fa-solid fa-code"></i> Programming Languages</h3>
+            <div class="tag-list">
+              <span class="tag">Java</span>
+              <span class="tag">Python</span>
+              <span class="tag">C++</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">TypeScript</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fa-solid fa-display"></i> Frontend</h3>
+            <div class="tag-list">
+              <span class="tag">React.js</span>
+              <span class="tag">Next.js</span>
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">Tailwind CSS</span>
+              <span class="tag">Redux</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fa-solid fa-server"></i> Backend</h3>
+            <div class="tag-list">
+              <span class="tag">Node.js</span>
+              <span class="tag">Express.js</span>
+              <span class="tag">REST APIs</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fa-solid fa-database"></i> Databases</h3>
+            <div class="tag-list">
+              <span class="tag">MongoDB</span>
+              <span class="tag">Firebase</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fa-solid fa-brain"></i> Machine Learning &amp; AI</h3>
+            <div class="tag-list">
+              <span class="tag">Machine Learning</span>
+              <span class="tag">NLP</span>
+              <span class="tag">Explainable AI</span>
+              <span class="tag">GenAI</span>
+              <span class="tag">Transformers</span>
+              <span class="tag">Hugging Face</span>
+              <span class="tag">TensorFlow</span>
+              <span class="tag">Scikit-learn</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">NumPy</span>
+              <span class="tag">Streamlit</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fa-solid fa-cloud"></i> Cloud &amp; Tools</h3>
+            <div class="tag-list">
+              <span class="tag">AWS</span>
+              <span class="tag">Git</span>
+              <span class="tag">GitHub</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Postman</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fa-solid fa-sitemap"></i> Core CS</h3>
+            <div class="tag-list">
+              <span class="tag">Data Structures &amp; Algorithms</span>
+              <span class="tag">OOP</span>
+              <span class="tag">Operating Systems</span>
+              <span class="tag">DBMS</span>
+              <span class="tag">Computer Networks</span>
+              <span class="tag">System Design</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section id="education" class="section reveal">
+        <div class="section-header">
+          <p class="eyebrow">Academic background</p>
+          <h2 class="section-title">Education</h2>
+        </div>
+        <div class="education-list">
+          <div class="education-card">
+            <div class="edu-years">2021 — 2025</div>
+            <div class="edu-details">
+              <h3>
+                Bachelor of Technology (Computer Science Engineering)
+                <span class="edu-cgpa">CGPA: 9.48/10</span>
+              </h3>
+              <p class="edu-school">SRM AP University</p>
+              <p class="edu-honors">
+                College Third Rank Holder · Gold Medalist — AI &amp; ML
               </p>
             </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Tech. Bachelors Degree<br /></p>
+          </div>
+          <div class="education-card">
+            <div class="edu-years">2019 — 2021</div>
+            <div class="edu-details">
+              <h3>
+                Class XII, State Board
+                <span class="edu-cgpa">954/1000</span>
+              </h3>
+              <p class="edu-school">Chaitanya College</p>
             </div>
           </div>
-          <div class="text-container">
-            <p>
-              I’m Sanjana Singamsetty, a recent B.Tech graduate with a strong
-              passion for building impactful software solutions. I have hands-on
-              experience in web and mobile app development using technologies
-              like React, Node.js, Flutter, and Dart. I’ve also worked
-              extensively in data science, machine learning, and AI,
-              contributing to research in healthcare and predictive analytics.
-              With a solid foundation in backend and frontend development, I’m
-              driven by problem-solving, clean architecture, and a continuous
-              desire to learn and grow as a developer.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">
-              Development & Programming Skills
-            </h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>React</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>NodeJs</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Java</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Mobile Application Development</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MongoDB</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">
-              Data Science & Analytics Skills
-            </h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Machine Learning</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>(NLP)</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Data visualization</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>DeepLearning</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Power Bi</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SQL</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
+          <div class="education-card">
+            <div class="edu-years">2019</div>
+            <div class="edu-details">
+              <h3>
+                Class X, CBSE
+                <span class="edu-cgpa">384/500</span>
+              </h3>
+              <p class="edu-school">Atkinson Senior Secondary School</p>
             </div>
           </div>
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="https://img.freepik.com/free-vector/emergency-isometric_1284-25291.jpg?w=1060&t=st=1705563102~exp=1705563702~hmac=80f0ebbac663c10be28a644867e3aa06f54dc3588d10435585da2094781d8288"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              Quickie - A Learning Application
-            </h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://my-react-learning-66zvubci5-sanjana-singamsettys-projects.vercel.app'"
-              >
-                Link
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="https://img.freepik.com/free-vector/bookmarks-concept-illustration_114360-2767.jpg?w=1060&t=st=1705563408~exp=1705564008~hmac=f7e28836c10b65b8e9618e558dcc6dfb2b74b8d1530670dd046e2b661abe8d50"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              Expense Tracker A Finance Application
-            </h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://huggingface.co/spaces/sanjana04/Expense-Analysis?logs=container'"
-              >
-                Link
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="https://img.freepik.com/free-vector/hand-drawn-flat-design-menopause-illustration_23-2149357520.jpg?w=1060&t=st=1705563594~exp=1705564194~hmac=21547ad4fe31e493add68c76ecdb233e42f144c0ce5c6d0cdd0bb8ba28467dd2"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              Kindey Disease Prediction with AI and Fuzzy Logic
-            </h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://huggingface.co/spaces/sanjana04/Chronic_Kidney_Aibased_Suggestion'"
-              >
-                Link
-              </button>
-            </div>
-          </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section reveal">
+        <div class="section-header">
+          <p class="eyebrow">Let's connect</p>
+          <h2 class="section-title">Contact Me</h2>
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p>
-            <a
-              href="mailto:singamsettysanjana04@gmail.com
-"
-              >singamsettysanjana04@gmail.com
-            </a>
-          </p>
+        <div class="contact-grid">
+          <a href="mailto:singamsettysanjana04@gmail.com" class="contact-card">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <span class="contact-label">Email</span>
+              <span class="contact-value">singamsettysanjana04@gmail.com</span>
+            </div>
+          </a>
+          <a href="tel:+919290003074" class="contact-card">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <span class="contact-label">Phone</span>
+              <span class="contact-value">+91 92900 03074</span>
+            </div>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/sanjana-singamsetty-117940218/"
+            class="contact-card"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+            <div>
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">sanjana-singamsetty</span>
+            </div>
+          </a>
+          <a
+            href="https://github.com/sanjana-singamsetty"
+            class="contact-card"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fa-brands fa-github"></i>
+            <div>
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">sanjana-singamsetty</span>
+            </div>
+          </a>
         </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p>
-            <a href="https://www.linkedin.com/in/sanjana-singamsetty-117940218/"
-              >LinkedIn</a
-            >
-          </p>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
+
     <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2023 Sanjana Singamsetty. All Rights Reserved.</p>
+      <p>
+        &copy; <span id="year"></span> Sanjana Singamsetty. Built with passion
+        for code &amp; research.
+      </p>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>

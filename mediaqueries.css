@@ -1,103 +1,227 @@
-@media screen and (max-width: 1400px) {
-  #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
+@media screen and (max-width: 1024px) {
+  .achievements-layout {
+    grid-template-columns: 1fr;
   }
-  .about-containers {
-    flex-wrap: wrap;
-  }
-  #contact,
-  #projects {
-    height: fit-content;
-  }
-}
 
-@media screen and (max-width: 1200px) {
-  #desktop-nav {
-    display: none;
-  }
-  #hamburger-nav {
-    display: flex;
-  }
-  #experience,
-  .experience-details-container {
-    margin-top: 2rem;
-  }
-  #profile,
-  .section-container {
-    display: block;
-  }
-  .arrow {
-    display: none;
-  }
-  section,
-  .section-container {
-    height: fit-content;
-  }
-  section {
-    margin: 0 5%;
-  }
-  .section__pic-container {
-    width: 275px;
-    height: 275px;
+  .achievement-showcase {
+    position: static;
+    max-width: 400px;
     margin: 0 auto 2rem;
   }
-  .about-containers {
-    margin-top: 0;
+
+  .achievements-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+    min-height: auto;
+    padding-top: 3rem;
+    gap: 3rem;
+  }
+
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-actions,
+  .social-links {
+    justify-content: center;
+  }
+
+  .hero-image {
+    order: -1;
+    min-height: 360px;
+  }
+
+  .hero-photo-card .photo-frame {
+    width: 280px;
+    height: 350px;
+  }
+
+  .badge-3 {
+    display: none;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .gallery-stack {
+    gap: 1.5rem;
+  }
+
+  .gallery-card {
+    width: 240px;
+    transform: none;
   }
 }
 
-@media screen and (max-width: 600px) {
-  #contact,
-  footer {
-    height: 40vh;
+@media screen and (max-width: 768px) {
+  :root {
+    --section-gap: 5rem;
+    --nav-height: 64px;
   }
-  #profile {
-    height: 83vh;
-    margin-bottom: 0;
+
+  #navbar {
+    padding: 0 1.25rem;
   }
-  article {
-    font-size: 1rem;
-  }
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
-  }
-  .about-containers,
-  .contact-info-upper-container,
-  .btn-container {
-    flex-wrap: wrap;
-  }
-  .contact-info-container {
-    margin: 0;
-  }
-  .contact-info-container p,
-  .nav-links li a {
-    font-size: 1rem;
-  }
-  .experience-sub-title {
-    font-size: 1.25rem;
-  }
-  .logo {
-    font-size: 1.5rem;
-  }
+
   .nav-links {
+    position: fixed;
+    top: var(--nav-height);
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(20px);
+    padding: 1.5rem;
+    gap: 0;
+    border-bottom: 1px solid var(--border);
+    transform: translateY(-120%);
+    opacity: 0;
+    transition: transform 0.35s ease, opacity 0.35s ease;
+    pointer-events: none;
+    box-shadow: var(--shadow-md);
+  }
+
+  .nav-links.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 0.85rem 0;
+    font-size: 1rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav-links a.nav-cta {
+    margin-top: 0.75rem;
+    text-align: center;
+    border: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .section {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .publications-grid,
+  .projects-grid,
+  .skills-grid,
+  .contact-grid,
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-stack {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .timeline-header {
     flex-direction: column;
     gap: 0.5rem;
-    text-align: center;
   }
-  .section__pic-container {
-    width: auto;
-    height: 46vw;
+
+  .education-card {
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1.5rem;
+  }
+
+  .edu-years {
+    min-width: auto;
+  }
+
+  .timeline-card {
+    padding: 1.25rem 1.5rem;
+  }
+
+  .floating-badge {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-title {
+    font-size: 2.25rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
     justify-content: center;
   }
-  .section__text__p2 {
-    font-size: 1.25rem;
+
+  .hero-photo-card .photo-frame {
+    width: 240px;
+    height: 300px;
   }
-  .title {
-    font-size: 2rem;
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
   }
-  .text-container {
-    text-align: justify;
+
+  .stat-card {
+    padding: 1rem;
+  }
+
+  .stat-number {
+    font-size: 1.4rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shape,
+  .floating-badge {
+    animation: none;
+  }
+
+  .card-3d,
+  .tilt-card {
+    transition: none;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 }
