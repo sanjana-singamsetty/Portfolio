@@ -172,6 +172,10 @@
   .floating-badge {
     display: none;
   }
+
+  .modal-box {
+    height: 95vh;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -187,6 +191,16 @@
   .btn {
     width: 100%;
     justify-content: center;
+  }
+
+  .project-links {
+    flex-direction: column;
+  }
+
+  .project-link-gh,
+  .project-link-live {
+    justify-content: center;
+    text-align: center;
   }
 
   .hero-photo-card .photo-frame {
@@ -209,7 +223,6 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .shape,
   .floating-badge {
     animation: none;
   }

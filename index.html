@@ -23,13 +23,8 @@
   </head>
 
   <body>
-    <div class="bg-3d" aria-hidden="true">
-      <div class="shape shape-1"></div>
-      <div class="shape shape-2"></div>
-      <div class="shape shape-3"></div>
-      <div class="shape shape-4"></div>
-      <div class="shape shape-5"></div>
-    </div>
+    <div id="scroll-progress" aria-hidden="true"></div>
+    <div class="bg-3d" aria-hidden="true"></div>
 
     <nav id="navbar">
       <a href="#hero" class="logo">SS<span class="logo-dot">.</span></a>
@@ -38,6 +33,7 @@
         <li><a href="#experience">Experience</a></li>
         <li><a href="#publications">Publications</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact" class="nav-cta">Contact</a></li>
       </ul>
@@ -53,10 +49,9 @@
       <section id="hero" class="section reveal">
         <div class="hero-content">
           <p class="eyebrow">Hello, I'm</p>
-          <h1 class="hero-title">Sanjana Singamsetty</h1>
+          <h1 class="hero-title"><span class="gradient-name">Sanjana Singamsetty</span></h1>
           <p class="hero-subtitle">
-            Software Engineer <span class="accent">@ PayPal</span> · AI
-            Researcher · Full-Stack Developer
+            <span id="typewriter"></span><span class="cursor-blink">|</span>
           </p>
           <p class="hero-description">
             Building scalable web applications and AI-powered products. Published
@@ -65,14 +60,6 @@
           </p>
           <div class="hero-actions">
             <a href="#contact" class="btn btn-primary">Get in Touch</a>
-            <a
-            href="/assets/Sanjana_S_Resume_Updated (4).pdf"
-              class="btn btn-secondary"
-              target="_blank"
-              rel="noopener"
-            >
-              <i class="fa-solid fa-download"></i> Download CV
-            </a>
           </div>
           <div class="social-links">
             <a
@@ -339,7 +326,7 @@
 
           <div class="timeline-item">
             <div class="timeline-marker"></div>
-            <div class="">
+            <div class="timeline-card">
               <div class="timeline-header">
                 <h3>AWS Intern — APSSDC</h3>
                 <span class="timeline-date">May 2023 — Aug 2023</span>
@@ -489,28 +476,51 @@
           <h2 class="section-title">Projects</h2>
         </div>
         <div class="projects-grid">
-          <article class="project-card">
+          <article class="project-card featured-card">
             <div class="project-image">
-              <img src="./assets/project-1.png" alt="React Learning App" />
+              <div class="browser-chrome">
+                <div class="browser-dots">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-yellow"></span>
+                  <span class="dot dot-green"></span>
+                </div>
+                <div class="browser-url">my-react-learning-lyart.vercel.app</div>
+              </div>
+              <div class="project-cover cover-react">
+                <div class="cover-glow"></div>
+                <div class="cover-icon"><i class="fa-brands fa-react"></i></div>
+                <div class="cover-body">
+                  <span class="cover-label">Full-Stack Web App</span>
+                  <span class="cover-name">React Learning</span>
+                </div>
+                <div class="cover-pills">
+                  <span>React</span><span>Node.js</span><span>REST API</span>
+                </div>
+              </div>
             </div>
             <div class="project-body">
-              <h3>React Learning — Full-Stack ML Web App</h3>
+              <div class="project-meta">
+                <span class="project-number">01</span>
+                <span class="project-badge">Full-Stack</span>
+              </div>
+              <h3>React Learning — Full-Stack Web App</h3>
               <p>
-                Full-stack ML-enabled web application using React, Node.js, and
-                Express with secure user data handling, REST APIs, and an
-                interactive UI.
+                Full-stack React application with Node.js backend, REST APIs,
+                interactive UI, and secure user data handling. Deployed on Vercel.
               </p>
               <div class="tag-list">
                 <span class="tag">React</span>
                 <span class="tag">Node.js</span>
                 <span class="tag">Express</span>
                 <span class="tag">REST APIs</span>
+                <span class="tag">Vercel</span>
               </div>
               <div class="project-links">
                 <a
                   href="https://github.com/sanjana-singamsetty/My-React-Learning"
                   target="_blank"
                   rel="noopener"
+                  class="project-link-gh"
                 >
                   <i class="fa-brands fa-github"></i> GitHub
                 </a>
@@ -518,6 +528,7 @@
                   href="https://my-react-learning-lyart.vercel.app/"
                   target="_blank"
                   rel="noopener"
+                  class="project-link-live"
                 >
                   <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
                 </a>
@@ -525,74 +536,85 @@
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card featured-card">
             <div class="project-image">
-              <img
-                src="./assets/project-2.png"
-                alt="Chronic Kidney Disease Prediction"
-              />
+              <div class="browser-chrome">
+                <div class="browser-dots">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-yellow"></span>
+                  <span class="dot dot-green"></span>
+                </div>
+                <div class="browser-url">smart-visualizer.vercel.app</div>
+              </div>
+              <div class="project-cover cover-smart">
+                <div class="cover-glow"></div>
+                <div class="cover-icon"><i class="fa-solid fa-brain"></i></div>
+                <div class="cover-body">
+                  <span class="cover-label">AI-Powered Analyzer</span>
+                  <span class="cover-name">SmartVisualizer</span>
+                </div>
+                <div class="cover-pills">
+                  <span>Claude AI</span><span>React</span><span>Visualization</span>
+                </div>
+              </div>
             </div>
             <div class="project-body">
-              <h3>Early CKD Prediction with Explainable AI</h3>
+              <div class="project-meta">
+                <span class="project-number">02</span>
+                <span class="project-badge ai-badge">AI-Powered</span>
+              </div>
+              <h3>SmartVisualizer — AI-Powered GitHub Repo Analyzer</h3>
               <p>
-                Healthcare AI tool using clinical datasets, ML models, and
-                explainability techniques — deployed on Hugging Face Spaces for
-                real-time predictions.
+                Intelligent repository explorer with AI chat, commit history analysis,
+                branch visualization, code structure insights, and multi-model AI debate feature.
               </p>
               <div class="tag-list">
-                <span class="tag">Machine Learning</span>
-                <span class="tag">Explainable AI</span>
-                <span class="tag">Hugging Face</span>
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Claude AI</span>
+                <span class="tag">Data Visualization</span>
+                <span class="tag">Full-Stack</span>
               </div>
               <div class="project-links">
                 <a
-                  href="https://github.com/sanjana-singamsetty/kindey_disease_prediction/tree/main"
+                  href="https://github.com/sanjana-singamsetty/SmartVisualizer"
                   target="_blank"
                   rel="noopener"
+                  class="project-link-gh"
                 >
                   <i class="fa-brands fa-github"></i> GitHub
                 </a>
                 <a
-                  href="https://huggingface.co/spaces/sanjana04/Chronic_Kidney_Aibased_Suggestion"
+                  href="https://smart-visualizer-git-main-sanjana-singamsettys-projects.vercel.app/"
                   target="_blank"
                   rel="noopener"
+                  class="project-link-live"
                 >
                   <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
                 </a>
               </div>
             </div>
           </article>
+        </div>
+      </section>
 
-          <article class="project-card">
-            <div class="project-image">
-              <img
-                src="./assets/project-3.png"
-                alt="Personality Explorer NLP"
-              />
-            </div>
-            <div class="project-body">
-              <h3>Personality Explorer — NLP &amp; Transformers</h3>
-              <p>
-                NLP personality prediction tool using transformer-based models,
-                Hugging Face Transformers, and Streamlit for real-time text
-                analysis.
-              </p>
-              <div class="tag-list">
-                <span class="tag">NLP</span>
-                <span class="tag">Transformers</span>
-                <span class="tag">Streamlit</span>
-              </div>
-              <div class="project-links">
-                <a
-                  href="https://huggingface.co/spaces/sanjana04/Personality-Explorer"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
-                </a>
-              </div>
-            </div>
-          </article>
+      <!-- Resume -->
+      <section id="resume" class="section reveal">
+        <div class="section-header">
+          <p class="eyebrow">My CV</p>
+          <h2 class="section-title">Resume</h2>
+        </div>
+        <div class="resume-actions">
+          <a
+            href="./assets/Sanjana_S_Resume_Updated (4).pdf"
+            download="Sanjana_Singamsetty_Resume.pdf"
+            class="btn btn-primary"
+          >
+            <i class="fa-solid fa-download"></i> Download PDF
+          </a>
+          <button class="btn btn-secondary" id="preview-resume-btn">
+            <i class="fa-solid fa-eye"></i> Preview Resume
+          </button>
         </div>
       </section>
 
@@ -777,6 +799,35 @@
         for code &amp; research.
       </p>
     </footer>
+
+    <!-- Resume Modal -->
+    <div id="resume-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-label="Resume Preview" hidden>
+      <div class="modal-box">
+        <div class="modal-header">
+          <span class="modal-title">
+            <i class="fa-solid fa-file-lines"></i> Sanjana Singamsetty — Resume
+          </span>
+          <div class="modal-header-actions">
+            <a
+              href="./assets/Sanjana_S_Resume_Updated (4).pdf"
+              download="Sanjana_Singamsetty_Resume.pdf"
+              class="modal-dl-btn"
+              title="Download PDF"
+            >
+              <i class="fa-solid fa-download"></i>
+            </a>
+            <button class="modal-close" id="modal-close" aria-label="Close preview">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+        </div>
+        <iframe
+          id="resume-iframe"
+          class="modal-frame"
+          title="Sanjana Singamsetty Resume"
+        ></iframe>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
