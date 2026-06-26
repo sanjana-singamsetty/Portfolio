@@ -115,7 +115,7 @@ if (heroScene) {
   const iframe  = document.getElementById("resume-iframe");
   const openBtn = document.getElementById("preview-resume-btn");
   const closeBtn = document.getElementById("modal-close");
-  const PDF_SRC = "./assets/Sanjana_S_Resume_Updated.pdf";
+  const PDF_SRC = "./assets/Sanjana_Singamsetty_2026.pdf";
 
   function openModal() {
     if (!iframe.src || iframe.src === window.location.href) {
